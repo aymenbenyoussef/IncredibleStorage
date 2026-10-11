@@ -1,0 +1,49 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_34-2cebba1b78fb21449e838335c08973d3755cbd8b",
+  "solcVersion": "0.8.34",
+  "solcLongVersion": "0.8.34+commit.80d5c536",
+  "compilerType": "solc",
+  "toolVersions": {
+    "hardhat": "3.18.1"
+  },
+  "userSourceNameMap": {
+    "contracts/IncredibleStorage.sol": "project/contracts/IncredibleStorage.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "osaka",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/IncredibleStorage.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity ^0.8.24;\r\n\r\ncontract IncredibleStorage {\r\n    uint256 private awesomeUInt;\r\n\r\n    constructor(uint256 initialValue) {\r\n        awesomeUInt = initialValue;\r\n    }\r\n\r\n    function set(uint256 value) public {\r\n        awesomeUInt = value;\r\n    }\r\n\r\n    function get() public view returns (uint256) {\r\n        return awesomeUInt;\r\n    }\r\n}\r\n"
+      }
+    }
+  }
+}
